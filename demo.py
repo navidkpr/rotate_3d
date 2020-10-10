@@ -3,7 +3,7 @@ from util import save_image
 import sys
 import os
 
-# Usage: 
+# Usage:
 #     Change main function with ideal arguments
 #     then
 #     python demo.py [name of the image] [degree to rotate] ([ideal width] [ideal height])
@@ -42,11 +42,11 @@ if not os.path.isdir('output'):
     os.mkdir('output')
 
 # Iterate through rotation range
-for ang in xrange(0, rot_range):
+for ang in range(0, rot_range):
 
     # NOTE: Here we can change which angle, axis, shift
-    
-    """ Example of rotating an image along y-axis from 0 to 360 degree 
+
+    """ Example of rotating an image along y-axis from 0 to 360 degree
         with a 5 pixel shift in +X direction """
     rotated_img = it.rotate_along_axis(phi = ang, dx = 5)
 
